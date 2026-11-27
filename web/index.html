@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080817">
+  <meta name="description" content="Space Oddity Arcade West System: un shooter espacial arcade.">
+  <title>Space Oddity Arcade West System</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="Space Oddity Arcade West System">
+        <span class="brand-mark">✦</span>
+        <span>SPACE ODDITY <b>ARCADE</b><small>WEST SYSTEM // SECTOR 07</small></span>
+      </a>
+      <div class="top-status"><i></i> SYSTEM ONLINE</div>
+    </header>
+
+    <section class="hero">
+      <div class="eyebrow">DEEP SPACE DEFENSE PROGRAM</div>
+      <h1>SPACE ODDITY<br><span>ARCADE WEST SYSTEM</span></h1>
+      <p class="subtitle">Una última línea de defensa entre la humanidad y el vacío.</p>
+    </section>
+
+    <section class="game-layout" aria-label="Videojuego">
+      <aside class="side-panel">
+        <div class="panel-label">MISSION DATA</div>
+        <div class="stat"><span>SCORE</span><strong id="score">000000</strong></div>
+        <div class="stat"><span>BEST</span><strong id="best">000000</strong></div>
+        <div class="stat"><span>WAVE</span><strong id="wave">01</strong></div>
+        <div class="stat"><span>HULL</span><strong id="lives">♥ ♥ ♥</strong></div>
+        <div class="side-divider"></div>
+        <div class="panel-label">FLIGHT MANUAL</div>
+        <p class="control"><kbd>←</kbd> <kbd>→</kbd><span>Mover nave</span></p>
+        <p class="control"><kbd>A</kbd> <kbd>D</kbd><span>Mover nave</span></p>
+        <p class="control"><kbd>SPACE</kbd><span>Disparar</span></p>
+        <p class="control"><kbd>P</kbd><span>Pausa</span></p>
+        <p class="control"><kbd>ENTER</kbd><span>Iniciar / reiniciar</span></p>
+      </aside>
+
+      <div class="screen-wrap">
+        <div class="screen-head"><span>LIVE FEED // EARTH ORBIT</span><span id="status">AWAITING PILOT</span></div>
+        <div class="canvas-holder">
+          <canvas id="game" width="900" height="600" aria-label="Campo de juego espacial"></canvas>
+          <div class="overlay" id="overlay">
+            <div class="overlay-kicker">INCOMING TRANSMISSION</div>
+            <h2 id="overlay-title">READY, PILOT?</h2>
+            <p id="overlay-copy">Defiende el sector. Sobrevive a las oleadas.<br>Tu misión comienza cuando tú lo decidas.</p>
+            <button id="start-button" class="neon-button">INICIAR MISIÓN <span>↗</span></button>
+          </div>
+        </div>
+        <div class="screen-foot"><span>THREAT LEVEL: <b id="threat">LOW</b></span><span>DIFFICULTY: PROGRESSIVE</span><span>FPS // WEB CANVAS</span></div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>© 2026 SPACE ODDITY ARCADE WEST SYSTEM</span>
+      <span>POWERED BY <b>AMAZON S3</b></span>
+    </footer>
+  </main>
+  <script type="module" src="./js/game.js"></script>
+</body>
+</html>
