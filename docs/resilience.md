@@ -51,7 +51,7 @@ Las pruebas confirmaron que los seis archivos principales del juego se pueden de
 | Escenario | Comportamiento esperado | Estado |
 |---|---|---|
 | localStorage bloqueado | El juego continúa y el guardado del récord falla de forma controlada. | Pendiente de prueba manual |
-| Recarga del navegador | El récord local permanece en el mismo navegador. | Pendiente de prueba manual |
+| Recarga del navegador | El récord local permanece en el mismo navegador. | Superada: récord conservado después de F5 |
 | Pérdida de Internet | Los recursos no almacenados en caché dejan de descargarse. | Limitación documentada |
 | Indisponibilidad de S3 | El sitio deja de estar disponible si el navegador no tiene los recursos necesarios en caché. | Limitación documentada |
 
