@@ -51,6 +51,6 @@ echo "Subiendo archivos del juego..."
 aws s3 sync "$WEB_DIR/" "s3://$BUCKET/" --delete \
   --cache-control "no-cache" --region "$REGION"
 
-WEBSITE_URL="http://$BUCKET.s3-website-$REGION.amazonaws.com"
+WEBSITE_URL="http://$BUCKET.s3-website.$REGION.amazonaws.com"
 printf "\nDESPLIEGUE COMPLETADO\nBucket: %s\nURL: %s\n" "$BUCKET" "$WEBSITE_URL"
 echo "$BUCKET" > "$ROOT_DIR/.bucket-name"
